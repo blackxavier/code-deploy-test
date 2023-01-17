@@ -10,29 +10,27 @@
 # Other resources created - 
 
 #####  A role that contains the following policies 
-1. AmazonEC2RoleforAWSCodeDeploy
-2. AmazonSSMManagedInstanceCore
+``` AmazonEC2RoleforAWSCodeDeploy ```
+``` AmazonSSMManagedInstanceCore ```
 #####  This role contains policies that authenticate and permit ec2 instances to download code from s3 and access SSM that would be used by Code Deploy to install the application via ssh on an EC2 instance. 
 
-AmazonEC2RoleforAWSCodeDeploy		
-AmazonSSMManagedInstanceCore
+##### ANother role that contains the following policies. 
+```` AmazonCodeDeployRole ````
 
-
-AmazonCodeDeployRole - This role contains policies that provides CodeDeploy service access to expand tags and interact with Auto Scaling on your behalf.
 
 
 # How To
-1. Create s3 bucket
-2. Create a role (You can name it anything) and attach the following policies
+##### 1. Create s3 bucket
+##### 2. Create a role (You can name it anything) and attach the following policies
      ```` AmazonEC2RoleforAWSCodeDeploy ````
         ```` AmazonSSMManagedInstanceCore ````
 
-    Also create another role and attach the following policies
+   ##### Also create another role and attach the following policies
    ```` AmazonCodeDeployRole ````
-3. Create an AWS instance and attach the first role to it as an instance profile. 
-4. Create a CodeDeploy application
-5. Create a pipeline. 
-Application is deploy successfully. 
+##### 3. Create an AWS instance and attach the first role to it as an instance profile. 
+##### 4. Create a CodeDeploy application
+##### 5. Create a pipeline. 
+##### Application is deploy successfully. 
 
-This is a note to self, you can find a more detialed tutorial on this detailed blog post -``` https://medium.com/@GeorgeBaidooJr/ci-cd-pipeline-deploy-a-simple-application-to-an-aws-ec2-instance-via-codedeploy-9fe0fb8f7130 ```
+##### This is a  short description of this workload,  you can find a more detialed tutorial on this detailed blog post -``` https://medium.com/@GeorgeBaidooJr/ci-cd-pipeline-deploy-a-simple-application-to-an-aws-ec2-instance-via-codedeploy-9fe0fb8f7130 ```
 

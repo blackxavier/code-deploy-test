@@ -14,7 +14,7 @@
 ``` AmazonSSMManagedInstanceCore ```
 #####  This role contains policies that authenticate and permit ec2 instances to download code from s3 and access SSM that would be used by Code Deploy to install the application via ssh on an EC2 instance. 
 
-##### ANother role that contains the following policies. 
+##### Another role that contains the following policies. 
 ```` AmazonCodeDeployRole ````
 
 
@@ -22,11 +22,14 @@
 # How To
 ##### 1. Create s3 bucket
 ##### 2. Create a role (You can name it anything) and attach the following policies
+
      ```` AmazonEC2RoleforAWSCodeDeploy ````
         ```` AmazonSSMManagedInstanceCore ````
 
    ##### Also create another role and attach the following policies
+
    ```` AmazonCodeDeployRole ````
+   
 ##### 3. Create an AWS instance and attach the first role to it as an instance profile. 
 ##### 4. Create a CodeDeploy application
 ##### 5. Create a pipeline. 

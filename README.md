@@ -14,3 +14,7 @@ AmazonEC2RoleforAWSCodeDeploy
 AmazonSSMManagedInstanceCore
 AmazonCodeDeployRole - This role contains policies that provides CodeDeploy service access to expand tags and interact with Auto Scaling on your behalf.
 
+
+# How To
+
+

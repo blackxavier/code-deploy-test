@@ -24,10 +24,10 @@ AmazonCodeDeployRole - This role contains policies that provides CodeDeploy serv
 # How To
 1. Create s3 bucket
 2. Create a role (You can name it anything) and attach the following policies
-     i. ```` AmazonEC2RoleforAWSCodeDeploy
-         AmazonSSMManagedInstanceCore
+     i. ```` AmazonEC2RoleforAWSCodeDeploy ````
+        ```` AmazonSSMManagedInstanceCore ````
     Also create another role and attach the following policies
-    ii. ```` AmazonCodeDeployRole
+    ii. ```` AmazonCodeDeployRole ````
 3. Create an AWS instance and attach the first role to it as an instance profile. 
 4. Create a CodeDeploy application
 5. Create a pipeline. 

@@ -1,6 +1,6 @@
 # Deploy code in S3 to EC2 instance using AWS CodeDepoy and AWS Code Pipeline
 
-##### This project involves an S3 bucket, a pipeline, a code deploy application, and an ec2 instance. The goal of this workload is to successfully deploy a working code from an s3 bucket to an ec2 instance. 
+This project involves an S3 bucket, a pipeline, a code deploy application, and an ec2 instance. The goal of this workload is to successfully deploy a working code from an s3 bucket to an ec2 instance. 
 
 # Core Resources 
 ##### S3 bucket - Used as a container to hold the source code. 
@@ -29,7 +29,7 @@
    ##### Also create another role and attach the following policies
 
    ```` AmazonCodeDeployRole ````
-   
+
 ##### 3. Create an AWS instance and attach the first role to it as an instance profile. 
 ##### 4. Create a CodeDeploy application
 ##### 5. Create a pipeline. 

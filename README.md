@@ -9,12 +9,14 @@ This project involves an S3 bucket, a pipeline, a code deploy application, and a
 
 # Other resources created - 
 
- A role that contains the following policies 
+Create a role that with the following policies.
+
 ``` AmazonEC2RoleforAWSCodeDeploy ```
 ``` AmazonSSMManagedInstanceCore ```
+
  This role contains policies that authenticate and permit ec2 instances to download code from s3 and access SSM that would be used by Code Deploy to install the application via ssh on an EC2 instance. 
 
- Another role that contains the following policies. 
+CReate a second role with the folowing policies . 
 ```` AmazonCodeDeployRole ````
 
 

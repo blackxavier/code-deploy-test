@@ -37,5 +37,5 @@ CReate a second role with the folowing policies .
 5. Create a pipeline. 
  Application is deploy successfully. 
 
- This is a  short description of this workload,  you can find a more detialed tutorial on this detailed blog post -``` https://medium.com/@GeorgeBaidooJr/ci-cd-pipeline-deploy-a-simple-application-to-an-aws-ec2-instance-via-codedeploy-9fe0fb8f7130 ```
+ This is a  short description of this workload,  you can find a more detialed tutorial on this detailed - [blog post](https://medium.com/@GeorgeBaidooJr/ci-cd-pipeline-deploy-a-simple-application-to-an-aws-ec2-instance-via-codedeploy-9fe0fb8f7130 )
 

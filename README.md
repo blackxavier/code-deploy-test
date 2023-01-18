@@ -6,8 +6,11 @@ This project involves an S3 bucket, a pipeline, a code deploy application, and a
 
 # Core Resources 
  __S3 bucket__ - Used as a container to hold the source code. 
+
  __AWS Code Pipeline__ - This resource is used to pull the source code from the S3 bucket and deliver to AWS Code Deploy
+
  __AWS Code Deploy__ - This resource is sued to deploy the source code pulled by AWS Code Pipeline to an EC2instance. 
+ 
 
 # Other resources created - 
 

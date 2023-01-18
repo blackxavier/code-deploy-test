@@ -2,7 +2,7 @@
 
 ![Deploy code in S3 to EC2 instance using AWS CodeDepoy and AWS Code Pipeline](https://github.com/blackxavier/code-deploy-test/blob/main/code-deploy.jpg "Deploy code in S3 to EC2 instance using AWS CodeDepoy and AWS Code Pipeline")
 
-This project involves an S3 bucket, a pipeline, a code deploy application, and an ec2 instance. The goal of this workload is to successfully deploy a working code from an s3 bucket to an ec2 instance. 
+This project involves an S3 bucket, an AWS Code Pipeline, an AWS Code Deploy application, and an ec2 instance. The goal of this workload is to successfully deploy a working code from an s3 bucket to an ec2 instance. 
 
 # Core Resources 
  __S3 bucket__ - Used as a container to hold the source code. 
@@ -10,7 +10,7 @@ This project involves an S3 bucket, a pipeline, a code deploy application, and a
  __AWS Code Pipeline__ - This resource is used to pull the source code from the S3 bucket and deliver to AWS Code Deploy
 
  __AWS Code Deploy__ - This resource is sued to deploy the source code pulled by AWS Code Pipeline to an EC2instance. 
- 
+
 
 # Other resources created - 
 
@@ -46,4 +46,6 @@ Application is deployed successfully.
 
  This is a short description of this workload,  you can find a more detialed tutorial on this detailed - [blog post](https://medium.com/@GeorgeBaidooJr/ci-cd-pipeline-deploy-a-simple-application-to-an-aws-ec2-instance-via-codedeploy-9fe0fb8f7130 )
 
+# NEXT STEPS
 
+The next step is to automate the entire CI/CD process. I would use AWS Code Pipeline to automate the pulling of source code to my S3 bucket, then AWS Code Pipeline picks up the update and uses AWS Code Deploy to deploy the code to my EC2 instance. The first part of this workload has been discussed in another [GitHub repository](https://github.com/blackxavier/code-pipeline-test ). I would merge the two applications and update this readme with an image of both workloads.

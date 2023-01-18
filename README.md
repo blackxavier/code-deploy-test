@@ -48,4 +48,7 @@ Application is deployed successfully.
 
 # NEXT STEPS
 
-The next step is to automate the entire CI/CD process. I would use AWS Code Pipeline to automate the pulling of source code to my S3 bucket, then AWS Code Pipeline picks up the update and uses AWS Code Deploy to deploy the code to my EC2 instance. The first part of this workload has been discussed in another [GitHub repository](https://github.com/blackxavier/code-pipeline-test ). I would merge the two applications and update this readme with an image of both workloads.
+The next step is to automate the entire CI/CD process. I would use AWS Code Pipeline to automate the pulling of source code to my S3 bucket, then AWS Code Pipeline picks up the updated code and uses AWS Code Deploy to deploy the code to my EC2 instance. The first part of this workload has been discussed in another [GitHub repository](https://github.com/blackxavier/code-pipeline-test ). I would merge the two applications and update this readme with an image of both workloads.
+
+
+![Pull all changes to S3bucket after a successfull commit, then deploy the code to an EC2 instance](https://github.com/blackxavier/code-deploy-test/blob/main/code-deploy.jpg "Pull all changes to S3bucket after a successfull commit, then deploy the code to an EC2 instance")

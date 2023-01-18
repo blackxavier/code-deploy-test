@@ -30,7 +30,7 @@ CReate a second role with the folowing policies .
 
     Also create another role and attach the following policies
 
-   ```` AmazonCodeDeployRole ````
+      ```` AmazonCodeDeployRole ````
 
  3. Create an AWS instance and attach the first role to it as an instance profile. 
  4. Create a CodeDeploy application
